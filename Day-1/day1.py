@@ -77,24 +77,77 @@ elif( day_num == 6 ):
 elif( day_num == 7 ):
     print("Sunday")
 else:
-    print("Enter correct day Number")
+    print("Invalid Input")
+
 #----------------------------------------------------------
 
 # calculator
 
+# first_operand = int(input("Enter first number :"))
+# operator =  input("Enter an operator : ")
+# second_operand = int(input("Enter second number :"))
+
+# if(operator == "+"):
+#     print(first_operand + second_operand)
+# elif(operator == "-"):
+#     print( first_operand - second_operand)
+# elif(operator == "*"):
+#     print( first_operand * second_operand)
+# elif(operator == "/"):
+#     if second_operand == 0 :
+#         print("Division by zero is not possible")
+#     else:
+#         print( first_operand / second_operand)
+# else:
+#     print("Invalid Input")
+
+
 first_operand = int(input("Enter first number :"))
-operator =  input("Enter an operator : ")
+operator =  input("Enter an operator : ").lower()
 second_operand = int(input("Enter second number :"))
 
-if(operator == "+"):
+if(operator  in ['add', '+']):
     print(first_operand + second_operand)
-elif(operator == "-"):
+elif(operator in ['sub', '+']):
     print( first_operand - second_operand)
-elif(operator == "*"):
+elif(operator in ['mul', '*']):
     print( first_operand * second_operand)
-elif(operator == "/"):
-    print( first_operand / second_operand)
+elif(operator in ['div', '/']):
+    if second_operand == 0 :
+        print("Division by zero is not possible")
+    else:
+        print( first_operand / second_operand)
 else:
-    print("Please enter correct")
+    print("Invalid Input")
+
 
 #--------------------------------------------------------------
+
+day_num = 1
+
+if (day_num == 1):
+    print("Jan")
+elif ( day_num == 2 ):
+    print("Feb")
+elif( day_num == 3 ):
+    print("Mar")
+elif( day_num == 4 ):
+    print("Aprl")
+elif( day_num == 5 ):
+    print("May")
+elif( day_num == 6 ):
+    print("Jun")
+elif( day_num == 7 ):
+    print("July")
+elif( day_num == 8 ):
+    print("Aug")
+elif( day_num == 9 ):
+    print("Sep")
+elif( day_num == 10 ):
+    print("Oct")
+elif( day_num == 11 ):
+    print("Nov")
+elif( day_num == 12 ):
+    print("Dec")
+else:
+    print("Invalid input")
