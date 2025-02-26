@@ -58,50 +58,7 @@ else:
 # --------------------------------------------------------------------------------
 
 
-#lOOPS
 
-# 1) Print all numbers from 1 to 100 using a for loop.
-
-# for i in range(1,101):
-#     print(i)
-#-----------------------------------------------------------------
-
-#  2) Write a program to print the sum of the first n natural numbers.
-
-
-
-# user_input = int(input("Enter a number : "))
-
-# sum = 0
-# for i in range(user_input + 1):
-#    sum =  user_input * ((user_input + 1)/2)
-
-# print("Sum is : ",sum)
-
-
-
-#---------------------------------------------------------------------
-#  3) Print all even numbers between 1 and 50 using a while loop.
-
-
-
-# even_number = 1
-# while( even_number < 50):
-#     if even_number % 2 == 0:
-#         print(even_number)
-#     even_number += 1
-
-
-
-# ----------------------------------------------
-
-# 4) Write a program to display the multiplication table of a given number. First 20
-
-# n = int(input("Enter Multiplacation Number : "))
-# for i in range(1,21):
-#     print ( n ,"x", i ,"=" , n * i)
-
-print("--------------------------------------------------")
 
 #----------------------------------------------------------------------------------
 
@@ -170,29 +127,44 @@ print("Factorial of given nuber is : " ,fact)
 
 # -----------------------------------------------------------------------
 
-# 4) Print all numbers from 1 to 100 that are divisible by 3 and 5 using a for loop
-#i % 15 == 0 or 
-for i in range(1 ,101):
-    if( i % 3 == 0 and i % 5 == 0):
-        print(i)
 
 #--------------------------------------
 
 # 5) Implement a menu-driven program where the user can choose to:
 
 
-print("1. Find the square of a number.")
-print("2. Find the cube of a number.")
-print("3. Exit")
-choose_option = int(input("Choose an option from above : "))
+while True:
+    print("1. Find the square of a number.")
+    print("2. Find the cube of a number.")
+    print("3. Exit")
+    choose_option = int(input("Choose an option from above : "))
 
-if choose_option == 1:
-    square_num = int(input("Enter the number to square : "))
-    print(square_num ** 2)
-elif choose_option == 2:
-    square_num = int(input("Enter the number to cube : "))
-    print(square_num ** 3)
-elif choose_option == 3:
-    print("Exit")
-else:
-    print("Invalid Option")
+    if choose_option == 1:
+        square_num = int(input("Enter the number to square : "))
+        print(square_num ** 2)
+    elif choose_option == 2:
+        square_num = int(input("Enter the number to cube : "))
+        print(square_num ** 3)
+    elif choose_option == 3:
+        print("Exiting")
+        break
+    else:
+        print("Invalid Option")
+#-----------------------------------------------------------------------
+# Implement a basic login system where the user has three
+ # attempts to enter the correct password using a loop
+
+db_username = "Vineeth1512"
+db_password = "Vineeth@123"
+
+total_attempts = 3
+while total_attempts > 0 :
+    input_username = input("Enter username : ")
+    input_password = input("Enter password : ")
+
+    if db_username == input_username and db_password == input_password:
+        print("Login Successfull")
+        break
+    else:
+        total_attempts -= 1
+        print("Login failed you still have ",total_attempts ,"attempts remaing")
