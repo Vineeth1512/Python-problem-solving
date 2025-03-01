@@ -4,6 +4,9 @@
 
 for i in range(1,101):
     print(i)
+
+
+# TC : O(n) , SC : O(1)
 #-----------------------------------------------------------------
 
 #  2) Write a program to print the sum of the first n natural numbers.

@@ -5,12 +5,14 @@
 
 #number = float(input("Enter a number : "))
 number = 4
-if number == 8:
+if number == 0:
     print("Zero")
 elif(number > 0):
     print("Positive")
 else:
     print("Negative")
+
+#TC :   O(1)
 
 #-------------------------------------------------
 # 2) Print given number is odd or even
@@ -22,6 +24,8 @@ if even_odd_number % 2 == 0:
 else:
     print("Odd")
 
+#TC O(1)
+
 #---------------------------------------------------
 
 # 3)  a pesion is eligible to vote or not
@@ -32,6 +36,8 @@ if age >= 18:
     print("Person is eligible to vote")
 else:
     print("Not eligible to Vote")
+
+#TC O(1)
 
 #------------------------------------------------------------
 
@@ -45,6 +51,9 @@ if( first_number  > second_number):
     print(first_number)
 else:
     print(second_number)
+
+
+#TC O(1)
 #----------------------------------------------------------------
 
 # 5) Sudent marks results
