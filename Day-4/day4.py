@@ -58,8 +58,8 @@ else:
 # GCD
 
 
-num1 = 16
-num2 = 4
+num1 = 13
+num2 = 3
 
 while num2 !=0:
     rem = num1 % num2
@@ -68,20 +68,23 @@ while num2 !=0:
 
 print("GCD ", num1)
 
-
+#-------------------------------------------------------------------
 num1 = 12
 num2 = 18
 
 
 max_num = num1 if num1 > num2 else num2
 
-while True:
-    if max_num % num1 == 0 and max_num % num2 == 0:
-        print("Lcm of two nubers is ", max_num)
+# while True:
+#     if max_num % num1 == 0 and max_num % num2 == 0:
+#         print("Lcm of two nubers is ", max_num)
+#         break
+#     max_num +=1
+
+for i in range(max_num , (num1  *  num2) + 1):
+    if i % num1 == 0 and i % num2 == 0:
+        print(i, " is the LCM ")
         break
-    max_num +=1
-
-
 
 #---------------------------------------
 
