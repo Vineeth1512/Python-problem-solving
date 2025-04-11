@@ -10,7 +10,7 @@
 #         break
 
 
-#Check if a given number is a prime number using a for loop.
+#   
 
 #prime_num = int(input("Enter a  number : "))
 # prime_num = 43

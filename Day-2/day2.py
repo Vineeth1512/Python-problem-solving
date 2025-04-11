@@ -18,7 +18,7 @@ else:
 
 # -------------------------------------------------------------
 
-# heck if three sides length form a valid traingle
+# check if three sides length form a valid traingle
 
 a = 3
 b = 6
